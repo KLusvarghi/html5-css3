@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links/Ancoras</title>
+</head>
+<body>
+    <h1>Usando links externos</h1> <!--Link que irá apontar para outros sites-->
+    <p>Você pode acessar o meu <a href="https://github.com/KLusvarghi/KLusvarghi" target="_blank" rel="external"> <!--"Target" = Alvo; "rel" que significa "RELATIVO A"--> repositório publico no GitHub</a> <!--Dentro de "href" irá entrar o URL de onde vc vai direcionar-->
+    <!-- este "a" vem  de ANCORA--></p>
+    <p>Você tambem pode acessar o<a href="https://www.youtube.com/">Youtuber por este link</a></p>
+    
+    
+    <br><br>
+
+
+    <!--target="_blank" rel="external" = TAGS recomendadas par uso de links externos, para não sobrepor o seu site-->
+    <h1>Usando links internos</h1>
+    <p>Está é a primeira página do site. Se voc~e quiser, pode acessar também a minha <a href="pag02.html" rel="next" hreflang="pt-br">segunda página</a> 
+    <!-- "next" que indicará próxima página-->
+    <!-- Sendo link interno, eu não preciso indicar a URL inteira-->
+    
+    <p>Voce tambem pode acessar a nossa página de <a href="noticias/pag03.html" rel="next">noticias</a></p>
+
+
+    <br><br>
+
+
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="Ligaçõs em toda parte.zip" type="application/zip">Baixar a aula em PDF</a></li>
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="Ligaçõs em toda parte.zip" type="application/zip">Aula compactada em ZIP</a></li>
+        <li><a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external"> Link do site </a>que contém as siglas para cada tipo de documento</li>
+        <!-- em "download" ficará o nome que aparecerá para o USUÁRIO-->
+        <!-- em "type" será o tipo de arquivo que terá que preencher de acordo com o determinado pelo site(segue o link)-->
+    </ul>
+
+</body>
+</html>

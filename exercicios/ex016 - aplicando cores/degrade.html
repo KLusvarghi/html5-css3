@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes em CSS</title>
+    <style>
+        *{ /* configuração global das CSS */
+            height: 100%; /*Usado para fazer degrade debaixo para cima (TOP)*/
+        }
+        body{
+            /*top = DE BAIXO PARA CIMA*/
+            /*left = DA  DIREITA PARA ESQUERDA*/
+            /*RIGHT = DA ESQUERDA PARA DIREITA*/
+            /*background-image: linear-gradient(to bottom, #605FD4, #8B48B9, #BD378E, #DA3378, #EC4B50, #F97431, #FDC868);*/ /* DE CIMA PRA BAIXO */
+            /*background-image: linear-gradient(to bottom, #605FD4, #8B48B9, #BD378E, #DA3378, #EC4B50, #F97431, #FDC868);*/ /* DE CIMA PRA BAIXO */
+
+             background-attachment: fixed; /*Para não ficar uma no fim da página, desative para ver o erro se for o caso */
+
+
+             /* Podendo oclar em graus, tendo mais OPÇÕOES*/
+             /* Tendo que colocar tudo junto, DEG = graus*/
+             background-image: linear-gradient(45deg, #605FD4 5%, #8B48B9 10%, #BD378E, #DA3378, #EC4B50 9%, #F97431, #FDC868);  /* PODENDO colocar a PORCENTAGEM do tamanho desejado da cor*/
+
+
+             /* Para fazer em circulo*/
+             /* Tendo que mudar para "Radial-gradient", e colocar a formula*/
+            /* background-image: radial-gradient(circle, #605FD4, #8B48B9, #BD378E, #DA3378, #EC4B50, #F97431, #FDC868);  */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+    
+</body>
+</html>

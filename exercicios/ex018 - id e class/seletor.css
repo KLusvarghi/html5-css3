@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/*
+em HTML é id ÚNICO          = em CSS é # (só pode ter um elemento)
+em HTML é class MULTIPLO    = em CSS é . (pode varios elementos)
+*/
+
+body{
+    background-color: rgb(149, 149, 248);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(0, 0, 110);
+}
+
+h1#principal{
+    text-align: center;
+    background-color: rgb(0, 0, 110);
+    color: white;
+}
+
+#principal{ /*Podendo declarar sem colocar o nome da TAG, porem é mais facil de achar quando tem o nome da TAG*/
+    text-align: center;
+    background-color: rgb(0, 0, 110);
+    color: white;
+}
+
+h2{
+    color: rgb(37, 37, 233);
+}
+
+/* h2.basico{ ----------- Na Class geralmente não se coloca o nome da TAG, apenas o .nomeDaClass
+
+}
+*/
+
+.basico{
+    color: rgb(0, 128, 32);
+    font-weight: bold;
+}
+
+.intermediario{
+    color: rgb(86, 105, 1);
+}
+
+.avancado{
+    color: rgb(165, 8, 8);
+}
+
+.destaque{ /* Podendo colocar duas CLASS diferentes em UMA TAG só, apenas colocando o nome, sem separa com virgula, apenas colocando um espaço  */
+    background-color: rgba(148, 148, 13, 0.295);
+}
+
+/*Podendo colar uma classe um id juntos na mesma TAG, porem o ID sobrepoem as configurações*/
+
+/*Não se pode usar o mesmo ID em duas Tags diferentes, irá funcionar, POREM é ERRADO fazer isso*/
+
+ /*
+ Uma CLASS tambem faz uma configuração personalizada, e se pode ter mais de um ou vários elementos com a mesma CLASS
+
+ usado para quando se quer dar o mesmo estilo para duas ou mais tags especificas diferentes das outras
+ */
+
+ /*Não dar nome as Class's ou aos id's pela forma, e sim pela sua FUNCIONALIDADE*/

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audios</title>
+</head>
+<body>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <audio src="audios/guanacast-33.mp3" controls autoplay></audio> <!-- Sendo a forma MAIS LIMITADA de se exibir um audio-->
+    <!--MP3 WAV OGG são os formatos de audios existentes-->
+
+    <audio preload="metadata" controls loop autoplay>
+        <!--controls = irá exibir os controles de play, etc.-->
+        <!--loop = quando chegar no final do audio ele irá recomeçar-->
+        <!-- auto = ELE irá considerar que o site terminou de carregar depois que ele carregar o audio. NÃO RECOMENDADO -->
+        <!-- metadara = ELE só irá carregar data, duração, etc. RECOMENDADO-->
+        <!-- none = ELE só sera CARREGADO quando o usuário apertar no play. NÃO RECOMENDADO -->
+        <source src="audios/guanacast-33.mp3" type="audio/mpeg"> 
+        <source src="audios/guanacast-33.ogg" type="audio/ogg">
+        <source src="audios/guanacast-33.wav" type="audio/wav"> <!--Arquivos WAV's são arquivos muito grandes e pesados. NÃO RECOMENDADO-->
+        <!--É como se fosse um "if" e dois "else if"-->
+        <!--Se ele não conseguir carregar o mp3, ele vai tetar o ogg, se não ele tentará o wav-->
+
+        <p>Infelizmente o seu navegador não xonsegue reproduzir áudio. <a href="audios/guanacast-33.mp3">click aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    
+</body>
+</html>

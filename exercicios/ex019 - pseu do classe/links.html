@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+        #   = id
+        .   = class
+        :   = pseudo-class - são palavras que definem estado de elementos dentro da HTML, (no momento)
+        ::  = pseudo-element são palavras que definem estado de elementos dentro da HTML, (antes/ depois, mais nunca no momento)
+        >   = children
+        */
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none; /*Tirar o sublinhado do texto*/
+            font-weight: bold;
+        }
+
+        /*
+        pseudo-classes são palavras que definem estado de elementos dentro da HTML
+
+        pseudo-classes :
+        */
+        a:visited{ /*Quando for visitado/clicado*/
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline; /*Quando passar por cima ele ficará sublinhado*/
+        }
+        a:active{ /*Quando for clicado*/
+            color: yellow;
+        }
+
+        
+
+
+        /*
+        pseudo-Elemento ele pode agir nas class's, elementos, id's; eles mexem no conteudo periférico do elemento.
+
+        pseudo-Elemento ::
+        */
+
+        .especial{
+            background-color: rgb(255, 116, 116);
+        }
+        
+        a::before{ /*antes de tudo ele irá fazer*/
+            content: '↠ '; /* Content = Conteúdo */
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(24, 194, 89);
+        }
+        a::after{ /*depois de tudo ele irá fazer*/
+            content: ' ↞'; /* Content = Conteúdo */
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(24, 194, 89);
+        }
+
+        .especial::before{
+            content: ' ☀'; /* Content = Conteúdo */
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(69, 24, 194);
+        }
+        .especial::after{
+            content: ' ☀'; /* Content = Conteúdo */
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(69, 24, 194);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <li><a href="https://github.com/gustavoguanabara?tab=repositories" target="_blank">Repositório Github</a></li>
+    <li><a href="https://www.youtube.com/" target="_blank" class="especial">Canal no YouTube</a></li>
+    <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" target="_blank">Site do CursoemVideo</a></li>
+    
+</body>
+</html>

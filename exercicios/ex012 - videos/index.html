@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu própio servidor</p>
+
+    <!-- <video src="videos/meu-video.webm" width="500px" controls autoplay></video>  -->
+    <!--Sendo a forma mais simples e NÃO RECOEMNDADO-->
+
+    <video controls width="500px" poster="img/tambi.jpg"> <!-- sendo o "poster" o poster que irá ser exibido enquando o video estar apausado-->
+        <source src="videos/meu-video.m4v" type="video/mp4"> <!--1º a ser testado-->
+        <source src="videos/meu-video.mp4" type="video/mp4"> <!--2º a ser testado-->
+        <source src="videos/meu-video.webm" type="video/webm"> <!--3º a ser testado-->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <br><br><br><br><br><br><br>
+
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe 
+    width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+
+    <!--Para obter esse código é só ir em compartilhar em qualquer video no youtube e 
+    clicar em "incorporar" e copiar e colar o código que irá ser exibido-->
+
+    <!--podendo alterar, acrescentar ou tirar coisas do código-->
+
+    <!--sendo a melhor maneira de exibir vídos por não ocupar espaço para a ospedagem do site-->
+
+
+    <br><br><br><br><br><br><br>
+
+
+    <h1>Inserindo Vídeo do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/153187817?h=0ee6612d2f&autoplay=1&loop=1&color=ff0179&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/153187817">2016 Animation Reel</a> from <a href="https://vimeo.com/user35981119">jackson read</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+    <!--Para caso queira videos privados o Vimeo tem essa opção, mas pe paga-->
+</body>
+</html>

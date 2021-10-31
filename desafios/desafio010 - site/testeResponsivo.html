@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testetando Responsivo</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+
+            min-width: 320px; /* 320 para telas pequenas de celulares antigos*/
+            max-width: 800px; /*para telas maiores de tabletes*/
+            margin: auto; /*Para  o conteudo sempre ficar alihado ao centro*/
+        }
+
+        img{ 
+            width: 100%; /*Isso fará a imagem se adaptar conforme a tela diminue. [um tipo de responsividade]*/
+        }
+        p{
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste Responsividade</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit vitae tempore dolores, dicta quo commodi perspiciatis soluta tenetur doloribus fugit, nemo consequuntur accusantium debitis aspernatur mollitia impedit facilis repellendus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores placeat est repellendus quasi adipisci corporis labore autem? Minima pariatur, ex consequuntur magni commodi illo, quo incidunt earum accusamus, voluptatem culpa? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius laudantium, quo omnis fuga, saepe provident, optio corporis corrupti esse ratione aliquid delectus temporibus atque quibusdam autem laboriosam quas nulla.
+        </p>
+            <picture>
+                <source media="(max-width: 600px)" srcset="imgs/irina-blok-pq.jpg"> <!-- Quando a tela tiver até no MAXIMO 800px, ela irá exibir esta imagem, caso tenha mais do que 800px, ela irá exibir a imagem maior-->
+
+                <img src="imgs/irina-blok.jpg" alt="irina Block">
+            </picture>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit vitae tempore dolores, dicta quo commodi perspiciatis soluta tenetur doloribus fugit, nemo consequuntur accusantium debitis aspernatur mollitia impedit facilis repellendus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores placeat est repellendus quasi adipisci corporis labore autem? Minima pariatur, ex consequuntur magni commodi illo, quo incidunt earum accusamus, voluptatem culpa? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius laudantium, quo omnis fuga, saepe provident, optio corporis corrupti esse ratione aliquid delectus temporibus atque quibusdam autem laboriosam quas nulla.
+        </p>
+    </main>
+    
+</body>
+</html>

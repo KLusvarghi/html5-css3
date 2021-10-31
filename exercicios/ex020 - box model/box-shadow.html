@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX-SHADOW</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(132, 168, 247);
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+
+        }
+        nav {
+            background-color: rgb(122, 154, 165);
+            padding: 3px;
+            box-shadow: 1px 1px 1px black; /*1º deslocamento HORIZONTAL; 2º descolocamento VERTICAL; 3º ESPALHAMENTO; 4º COR*/
+
+            box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.322); /* INSET = sobra do lado de dentro. 1º deslocamento HORIZONTAL; 2º descolocamento VERTICAL; 4º EMBASAMENTO 3º ESPALHAMENTO; 4º COR*/
+
+            box-shadow:  2px 2px 4px 1px rgba(0, 0, 0, 0.322); /*  1º deslocamento HORIZONTAL; 2º descolocamento VERTICAL; 4º EMBASAMENTO 3º ESPALHAMENTO; 4º COR =  Sempre que colocar a cor, ela é preta e sempre com transparencia da metade para BAIXO*/
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: rgb(125, 165, 252) ;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(103, 139, 218) ;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho da pág-->
+        <h1>Meu primeiro site</h1>
+        <nav> <!-- Menu de NAVEGAÇÃO, nav(NAVEGÇAÕ) -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Conteúdo principal da pág-->
+        <section id="assunto"> <!--Seções dentro da pág-->
+            <p>Esporte Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article> <!--Artigo-->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos dicta voluptatum debitis laborum pariatur impedit aut inventore vitae minus nobis dolor expedita mollitia beatae, repudiandae deserunt, doloremque recusandae in. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, dicta illo in necessitatibus officia dolores facere perspiciatis eius officiis dolore eligendi id eveniet a pariatur nisi facilis animi laudantium earum?</p>
+                <aside> <!--Conteúdo periférico ao artigo, relativo ao article-->
+                    <p>Artigo escrito por José Filho Alvez</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!--Rodapé da pág-->
+        Desenvolvido por KAUÃ ORTOLANI LUSVARGHI
+    </footer>
+</body>
+</html>

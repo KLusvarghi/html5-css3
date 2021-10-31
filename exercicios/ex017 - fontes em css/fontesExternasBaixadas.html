@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'London';
+            src: url('fontesexternas/Olondona.otf') format('opentype'), url('fontesexternas/OldLondon.ttf') format('truetype');
+            /*O nome tem que estar sempre entre "aspas". caso coloque a fonte na pasta principal, basta colocar o nome exatamente como ele é, com espaço, letras maiusculas/minusculas, etc   */
+            font-weight: normal;
+            font-style: normal;
+            /*
+            Tipos de format(): 
+            1º opentype (otf)       existem fontes "ttf que são opentype, basta ter que fazer testes nos navegadores..."
+            2º truetype (ttf)
+            3º embedded-pentype
+            4º truetype-att (Apple Advance Typography)
+            5º svg
+
+            */
+
+            /*
+            Tendo navegadores que funcionam melhor com "ttf" e outros com "otf", então basta colocar as duas fontes
+            */
+        }
+
+        @font-face {
+            font-family:'Romantic' ;
+            src: url('fontesexternas/RomanticDates.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'London', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+        h2{
+            font-family: 'Romantic', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        /**/
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes Externas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium delectus ea illo fuga eos rem doloremque. Unde voluptatem ipsum, accusantium vitae temporibus iste? Ratione expedita dolor, iusto molestiae modi asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore, rerum expedita odio amet illum provident autem ipsum nam facere. Facere aut ut eveniet et dicta sapiente eum sint magnam!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, tenetur, eaque quasi in quas rem pariatur repellendus corporis a cumque ipsa consequatur adipisci unde totam? Similique qui magnam incidunt corporis!</p>
+    <h2>Subtitulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quidem assumenda! Error dolorem soluta est ut ullam illo tempora dicta repellendus amet numquam id officiis veniam, provident nulla recusandae odio?</p>    
+    
+</body>
+</html>
