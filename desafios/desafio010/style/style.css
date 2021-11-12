@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@font-face {
+@font-face { /*PARA quando se abaixa uma fonte e que esteja em uma*/
     font-family: 'Android';
     src: url('../fonts/idroid.otf') format('opentype');
     font-weight: normal;
@@ -43,7 +43,7 @@ header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5)); /*Colocando um degrade de cima para baixo no header*/
     min-height: 150px;
     text-align: center;
-    /* margin-top: 40px; Se eu fier assim, ile irá vazar para fora da caixa, deixando um espaço feio entre o topo e a caixa */
+    /* margin-top: 40px; Se eu fier assim, ele irá vazar para fora da caixa, deixando um espaço feio entre o topo e a caixa */
     padding-top: 40px;
     
 }
