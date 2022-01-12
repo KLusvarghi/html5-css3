@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background: url('imgs/target001.png');
+            background-size: 100% 100%;
+            position: relative; /*todo posicionamento de um box já é RELATIVO*/
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            background: url('imgs/target001.png');
+            background-size: 100% 100%;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            position: absolute;
+            /*quando e coloca um position absolute em um elemento, é possivel confiurar dois elementos nele*/
+            left: 50%;
+            top: 50%;
+
+            /*transform trnalete ele basicamente irá meher no componete na medida que quiser*/
+            transform: translate(-50%, -50%); /*centralizado  o conteudo*/
+            /*se o 1º valor dor positivo, meche para direita, caso negativo, vai para a esquerda;
+            se o 2º valor for positivo ele vai para baixo. caso negativo ele vai para cima*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
