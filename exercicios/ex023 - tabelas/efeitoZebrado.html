@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantica de Tabelas</title>
+</head>
+<style>
+    body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse; 
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center; /*alinhamento horizontal */
+            vertical-align: top; /*alinhamento vertical
+            */
+        }
+
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+
+        td.number{
+            text-align: right;
+        }
+
+        td{
+            text-align: left;
+        }
+
+        /* tbody > tr:nth-child(2n){ /* "2n" sgnifica que acada 2 ele irá aplicar o estilo desejado
+            background-color: lightblue; 
+        } */
+
+        tbody > tr:nth-child(odd){ /* ood que no caso sginifica "IMPAR" em ingkes, sendo outrra maneira de zebrar a cor das colunas */
+            background-color: lightblue;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(even){ /* EVEN = que é par*/
+            background-color: rgb(16, 150, 194);
+            color: white;
+            text-decoration: underline;
+        }
+</style>
+<body>
+    <h1>Uso de trabelas mais complexas</h1>
+
+    <!-- ANATOMIA PARA TABELAS GRANDES
+    
+    TABLE
+        THEAD = parte de cima
+            TR, TD, TH
+        TBODY = corpo da tabela
+            TR, TD, TH
+        TFOOT = Parte do rodapé
+            TR, TD, TH
+-->
+    <table>
+        <caption>População das unidades federativas</caption> <!--Titulo da tabela-->
+       <thead>
+        <tr>
+            <th scope="col">Estado</th> <!--SCOPE "COL, siginifica que ele é um titulo de coluna"-->
+            <th scope="col" style="width: 50px;">População</th>
+        </tr>
+       </thead>
+       <tr>
+           <td>São Paulo</td>
+           <td class="number">46 649 132</td>
+       </tr>
+       <tr>
+           <td>Minas Gerais</td>
+           <td class="number">21 411 923</td>
+       </tr>
+       <tr>
+            <td>Rio de Janeiro</td>
+            <td class="number">17 463 349</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="number">17 463 349</td>
+        </tr> <tr>
+            <td>Rio de Janeiro</td>
+            <td class="number">17 463 349</td>
+        </tr>
+       <tbody>
+
+       </tbody>
+       <tfoot>
+            <th scope="row">Total de Habitantes</th> <!--Título da linha-->
+            <td>85.524.404</td> <!--Dados-->
+       </tfoot>
+
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas Responsivas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table {
+        width: 900px;
+        border-collapse: collapse;
+      }
+      caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+      td,
+      th {
+        border: 1px solid black;
+        text-align: center;
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      tr:nth-child(even){
+          background-color: rgba(128, 128, 128, 0.562);
+      }
+
+      /* para v=fazer uma tabela responsiva, basta apenas embalar a tabela em uma div e adicionar esse seguintes itens */
+      #container{
+          /* overflow = transbordar */
+          /* ficando a barra de rolagem apenas na tabela */
+          overflow-x: auto;
+          /* o "width" não é necessario para a responsividade */
+          width: 80vw;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis facere
+      dolor unde similique porro cum harum quis at. Reiciendis, laboriosam
+      numquam, animi magnam illum molestiae explicabo, ab pariatur quis
+      asperiores omnis molestias fugit placeat obcaecati. Architecto, nesciunt
+      quibusdam. Impedit ad fugiat incidunt. Officia vitae deserunt esse culpa
+      sapiente atque cumque voluptatem dolores. Corporis, minima nostrum
+      quibusdam accusantium asperiores ipsa, quo harum ipsam rem aliquid qui
+      quisquam esse, repudiandae maiores tenetur modi illo cum nesciunt! Magnam
+      nisi iusto sed soluta, aut qui incidunt neque cupiditate, repellendus
+      voluptatem unde architecto recusandae adipisci vel perferendis quos, at
+      voluptate necessitatibus! Similique fugit sunt aliquid.
+    </p>
+
+    <div id="container">
+        <table>
+          <caption>Tabelas responsivas</caption>
+
+          <tr>
+            <th>Produtos</th>
+            <th>Jan</th>
+            <th>Fev</th>
+            <th>Mar</th>
+            <th>Abr</th>
+            <th>Mai</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Ago</th>
+            <th>Set</th>
+            <th>Out</th>
+            <th>Nov</th>
+            <th>Dez</th>
+          </tr>
+          <tr>
+            <th>TV 40'</th>
+            <td>01</td>
+            <td>05</td>
+            <td>08</td>
+            <td>04</td>
+            <td>11</td>
+            <td>78</td>
+            <td>12</td>
+            <td>08</td>
+            <td>14</td>
+            <td>09</td>
+            <td>15</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <th>Cama Casal</th>
+            <td>01</td>
+            <td>05</td>
+            <td>08</td>
+            <td>04</td>
+            <td>11</td>
+            <td>08</td>
+            <td>12</td>
+            <td>14</td>
+            <td>08</td>
+            <td>09</td>
+            <td>15</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <th>Guarda Roupas</th>
+            <td>01</td>
+            <td>05</td>
+            <td>08</td>
+            <td>04</td>
+            <td>11</td>
+            <td>16</td>
+            <td>08</td>
+            <td>12</td>
+            <td>14</td>
+            <td>09</td>
+            <td>15</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <th>Notebook</th>
+            <td>01</td>
+            <td>05</td>
+            <td>08</td>
+            <td>04</td>
+            <td>16</td>
+            <td>11</td>
+            <td>08</td>
+            <td>12</td>
+            <td>14</td>
+            <td>09</td>
+            <td>15</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <th>Iphone</th>
+            <td>01</td>
+            <td>05</td>
+            <td>08</td>
+            <td>16</td>
+            <td>04</td>
+            <td>11</td>
+            <td>08</td>
+            <td>12</td>
+            <td>14</td>
+            <td>09</td>
+            <td>15</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <th>PlayStation</th>
+            <td>01</td>
+            <td>05</td>
+            <td>08</td>
+            <td>04</td>
+            <td>11</td>
+            <td>08</td>
+            <td>12</td>
+            <td>14</td>
+            <td>09</td>
+            <td>15</td>
+            <td>16</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <th>Lava Louças</th>
+            <td>01</td>
+            <td>05</td>
+            <td>08</td>
+            <td>04</td>
+            <td>11</td>
+            <td>08</td>
+            <td>12</td>
+            <td>14</td>
+            <td>09</td>
+            <td>15</td>
+            <td>16</td>
+            <td>16</td>
+          </tr>
+        </table>
+    </div>
+  </body>
+</html>

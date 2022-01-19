@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela Completa</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 1.5em;
+      }
+
+      table {
+        width: 900px;
+        border-collapse: collapse;
+      }
+
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+      }
+
+      td,
+      th {
+        border: 1px solid gray;
+        padding: 10px;
+        text-align: center; /*alinhamento horizontal */
+        vertical-align: center; /*alinhamento vertical
+            */
+      }
+
+      th {
+        font-weight: bolder;
+        align-items: center;
+        text-align: center;
+        font-size: 1.1em;
+      }
+
+      thead th{
+          background-color: rgb(119, 183, 226)
+      }
+
+      tbody th{
+          background-color: rgba(67, 172, 242, 0.474);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Filmes Favoritos
+      </caption>
+      <thead>
+        <tr>
+          <!-- no th usamos o "scope", existeindo 4 tipos:
+          row = para quando o th é tilulo de uma linha só
+          rowgorup = para quando o th é tilulo de varias linahs
+          col = para quando o th é tilulo de uma coluna só
+          colgorup = para quando o th é tilulo de varias colunas   -->
+          <th scope="col">Grupo</th> <!--th é tilulo de uma coluna só-->
+          <th scope="col">Nomes</th><!--th é tilulo de uma coluna só-->
+          <th colspan="3" scope="colgroup">Filmes</th><!--th é tilulo de varias colunas-->
+        </tr>
+      </thead>
+
+      <tfoot>
+        <tr>
+          <th colspan="4" scope="row">total</th>
+          <td>1000</td>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr> <!--Linha 1-->
+          <th rowspan="3" scope="rowgorup">Mulheres</th>
+          <td>Ana Maria Santos</td>
+          <td>Alien</td>
+          <td>Inception</td>
+          <td>Vingadores</td>
+        </tr>
+        <tr> <!--Linha 2-->
+          <td>Beatriz Souzas</td>
+          <td>Hulk</td>
+          <td>Rambo</td>
+          <td>Batman</td>
+        </tr>
+        <tr> <!--Linha 3-->
+          <td>Claudia Melo</td>
+          <td>Oblinion</td>
+          <td>Matrix</td>
+          <td>Big Hero</td>
+        </tr>
+
+        <tr> <!--Linha 4-->
+          <th rowspan="3" scope="rowgorup">Homens</th>
+          <td>Bruno Mendonça</td>
+          <td>Intocáveis</td>
+          <td>Amnésia</td>
+          <td>Gladiador</td>
+        </tr>
+        <tr> <!--Linha 5-->
+          <td>Daniela Lourenço</td>
+          <td>Wall-E</td>
+          <td>Oldboy</td>
+          <td>Dangal</td>
+        </tr>
+        <tr> <!--Linha 6-->
+          <td>Fabiabo Mota</td>
+          <td>Star Wars 5</td>
+          <td>Taxi Driver</td>
+          <td>Toy Story</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

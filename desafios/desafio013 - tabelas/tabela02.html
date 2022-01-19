@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 02</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            /* border-collapse: collapse; */
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .col{
+            background-color: rgba(78, 122, 233, 0.775);
+        }
+        .row{
+            background-color: rgba(216, 53, 53, 0.713);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Mesclagem da tabela</caption>
+        <tr>
+            <td class="row" colspan="4">A</td>
+            <td class="col" rowspan="4">B</td>
+            
+        </tr>
+        <tr>
+            <td class="col" rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+            
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td class="row" colspan="4">M</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

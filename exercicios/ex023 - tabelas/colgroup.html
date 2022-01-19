@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 700px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+            font-size: 1.4em;
+        }
+
+        tr.destaque{
+            background-color: rgb(115, 255, 0);
+        }
+
+        col.cnome{
+            background-color: rgb(0, 183, 255);
+        }
+
+        .cgrup{
+            background-color: rgb(195, 0, 255);
+        }
+
+        .ccidade{
+            background-color: rgb(255, 238, 0);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- Sendo esse colgrup para personalizar colunas que podem ser muito extenças
+        
+        ele leva em conta as colunas existentes, e nada mais, independente se foi feito em cabeçalho ou não-->
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cgrup" span="2"> <!--Podendo usar apenas um "col" para daus colunas e colocar um "span="2"" no final que apricará as duas colunas-->
+            <col class="ccidade">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+                <th scope="col">Cidade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+                <td>Santos</td>
+            </tr>
+            <!-- para personalizar coluna é apenas aplicar ao tr o estilo desejado: -->
+            <tr class="destaque">
+                <td>João Pedro</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>41</td>
+                <td>Professor</td>
+                <td>Santa Catarina</td>
+            </tr>
+            <tr>
+                <td>Roberto</td>
+                <td>M</td>
+                <td>335</td>
+                <td>Vendedor</td>
+                <td>Rio de Janeiro</td>
+            </tr>
+            <tr>
+                <td>Isabella</td>
+                <td>F</td>
+                <td>21</td>
+                <td>Analista</td>
+                <td>Campinas</td>
+            </tr>
+            <tr>
+                <td>Geovanna</td>
+                <td>F</td>
+                <td>24</td>
+                <td>Policial</td>
+                <td>Maceio</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
